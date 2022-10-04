@@ -49,6 +49,7 @@ test:
 #
 production:
   url: <%= ENV['DATABASE_URL'] %>
+
 #  <<: *default
 #  database: random-mandatory-socialization-generator_production
 #  username: random-mandatory-socialization-generator
