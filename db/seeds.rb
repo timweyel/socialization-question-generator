@@ -34,8 +34,6 @@ questions = Question.create([
                               { question: "Where have you traveled?" },
                               { question: "Would you rather become CEO for a day or receive a bonus?" },
                               { question: "If you could only take three books to a desert island what would they be?" },
-                              { question: "If you had to take a bath in a food" },
-                              { question: "which food would it be?" },
                               { question: "If you were sent to live on a space station for three months and only allowed to bring three personal items with you, what would they be?" },
                               { question: "What’s your personal heaven?" },
                               { question: "What are your favorite pizza toppings?" },
