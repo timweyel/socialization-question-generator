@@ -50,7 +50,7 @@ test:
 production:
   url: <%= ENV['DATABASE_URL'] %>
 
-#  <<: *default
-#  database: random-mandatory-socialization-generator_production
-#  username: random-mandatory-socialization-generator
-#  password: <%= ENV['RANDOM-MANDATORY-SOCIALIZATION-GENERATOR_DATABASE_PASSWORD'] %>
+  <<: *default
+  database: random-mandatory-socialization-generator_production
+  username: random-mandatory-socialization-generator
+  password: <%= ENV['RANDOM-MANDATORY-SOCIALIZATION-GENERATOR_DATABASE_PASSWORD'] %>
