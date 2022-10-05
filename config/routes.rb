@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  root :to => 'alunos#index'
+  root :to => 'index#index'
   get "/questions", to: "questions#index"
 end
