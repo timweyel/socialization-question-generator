@@ -3,8 +3,7 @@ questions = Question.create([
                               { question: "Would you rather work a job where you interact with people all day or work a job where you are at a desk all day?" },
                               { question: "What are we really looking for?" },
                               { question: "Would you rather risk getting tricked or give our king sized candies all night?" },
-                              { question: "Do you or do you not like watching horror films, and why? If you like watching" },
-                              { question: "what's your most favorite?" },
+                              { question: "Do you or do you not like watching horror films, and why? If you like watching, what's your most favorite?" },
                               { question: "Would you rather join Metallica or Backstreet Boys?" },
                               { question: "What are your favorite TV shows?" },
                               { question: "Pause time or rewind time?" },
@@ -197,6 +196,6 @@ questions = Question.create([
                               { question: "What topic could you give the longest presentation on right now with no preparation?" },
                               { question: "What do you like most about remote work?" },
                               { question: "Do you have any short term goals? What are you looking to achieve within the next year?" },
-                              { question: "#1st thing you are excited to do after getting Covid-19 vaccinated?" },
+                              { question: "1st thing you are excited to do after getting Covid-19 vaccinated?" },
                               { question: "Who is your favorite Disney hero or heroine? Would you trade places with them?" }
                             ])
