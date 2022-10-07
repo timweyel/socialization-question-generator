@@ -1,10 +1,18 @@
 class QuestionsController < ApplicationController
-  def index
-    @questions = Question.order("RAND()").first
-    # @questions = Question.all
+  before_action :set_questions
+  before_action :set_question, only: [:show]
+
+  def index;end
+
+  def show;end
+
+  private
+
+  def set_questions
+    @questions = Question.all
   end
 
-  def show
-    @questions = Question.find(params[:id])
+  def set_question
+    @questions = @questions.sample
   end
 end
