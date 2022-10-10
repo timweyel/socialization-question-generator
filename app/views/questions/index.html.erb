@@ -1,8 +1,10 @@
 <h1>Random Mandatory Socialization Question</h1>
 
-<div class="">
+<h2><%= button_to "Fresh Question", get_question_path, :method => :get %></h2>
+
+<h3 class="left_margin">
   <% @questions.each do |q| %>
     <br>
     <%= q.question_string %>
   <% end %>
-</div>
+</h3>
