@@ -74,7 +74,7 @@
     <orderEntry type="library" scope="PROVIDED" name="mysql2 (v0.5.4, rbenv: 2.6.9) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nio4r (v2.5.8, rbenv: 2.6.9) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.13.8, rbenv: 2.6.9) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="popper_js (v2.9.3, rbenv: 2.6.9) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="popper_js (v2.11.6, rbenv: 2.6.9) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="public_suffix (v5.0.0, rbenv: 2.6.9) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="puma (v3.12.6, rbenv: 2.6.9) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="racc (v1.6.0, rbenv: 2.6.9) [gem]" level="application" />

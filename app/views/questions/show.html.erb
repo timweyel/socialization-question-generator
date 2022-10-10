@@ -1,3 +1,9 @@
 <h1>Random Mandatory Socialization Question</h1>
 
 <h2><%= @questions.question_string %></h2>
+
+<div class="button">
+  <%= button_to "Fresh Question", get_question_path, :method => :get %>
+    <br>
+  <%= button_to "All Questions", questions_path, :method => :get %>
+</div>
