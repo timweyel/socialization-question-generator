@@ -1,38 +1,38 @@
 class QuestionsController < ApplicationController
-  before_action :set_questions
-  before_action :set_question, only: [:show, :index]
+  # before_action :index
+  # before_action :show, only: [:show, :index]
+
+  def show
+    @question = Question.find(params[:id])
+  end
 
   def index
     @questions = Question.all
   end
 
-  def show
-    byebug
-    @question = Question.find(params[:id])
-  end
-
 end
 
   def new
-    @questions = Question.new
+    # @questions = Question.new
   end
 
   def create
-    @questions = Question.new(params.require(:question))
-    if @questions.save
-      flash[:notice] = "Question was created successfully."
-      redirect_to @questions
-    else
-      render 'new'
-    end
+    @question = Question.new(params.require(:question).permit(:question_string))
+    @question.save
+    # if @question.save
+    #   flash[:notice] = "Question was created successfully."
+      redirect_to @question
+    # else
+    #   render 'new'
+    # end
   end
+  #
+  # private
 
-  private
-
-  def set_questions
-    @questions = Question.all
-  end
-
-  def set_question
-    @questions = @questions.sample
-  end
+  # def get_questions
+  #   @questions = Question.all
+  # end
+  #
+  # def get_question
+  #   @questions = @questions.sample
+  # end
