@@ -2,9 +2,20 @@
 
 <h2><%= button_to "Fresh Question", get_question_path, :method => :get %></h2>
 
-<h3 class="left_margin">
-  <% @questions.each do |q| %>
-    <br>
-    <%= q.question_string %>
-  <% end %>
-</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Question</th>
+    </tr>
+  </thead>
+    <tbody>
+      <% @questions.each do |q| %>
+        <tr>
+          <td><%= q.id %></td>
+          <td><%= q.question_string %></td>
+        </tr>
+      <% end %>
+    </tbody>
+</table>
