@@ -1,16 +1,16 @@
 <h1>Create a new question</h1>
-<%# if @questions.errors.any? %>
-<!--  <h2>The following errors prevented the question from being saved:</h2>-->
-<!--  <ul>-->
-    <%# @questions.errors.full_messages.each do |msg| %>
-<!--      <li><%#= msg %></li>-->
-    <%# end %>
-<!--  </ul>-->
-<%# end %>
+<% if @questions.errors.any? %>
+  <h2>The following errors prevented the question from being saved:</h2>
+  <ul>
+    <% @questions.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+  </ul>
+<% end %>
 <%= form_with scope: :question_string, url: questions_path, local: true do |f| %>
   <p>
     <%= f.label :question %><br/>
-    <%= f.text_field Question %>
+    <%= f.text_field :question_string %>
   </p>
   <p>
     <%= f.submit %>

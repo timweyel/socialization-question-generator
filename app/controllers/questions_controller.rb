@@ -1,6 +1,6 @@
 class QuestionsController < ApplicationController
-  # before_action :index
-  # before_action :show, only: [:show, :index]
+
+  # before_action :show, only: [:show, :index, :new, :create]
 
   def show
     @question = Question.find(params[:id])
@@ -10,21 +10,18 @@ class QuestionsController < ApplicationController
     @questions = Question.all
   end
 
-end
-
   def new
-    # @questions = Question.new
+    @question = Question.new
   end
 
   def create
-    @question = Question.new(params.require(:question).permit(:question_string))
-    @question.save
-    # if @question.save
-    #   flash[:notice] = "Question was created successfully."
+    @question = Question.new(params.require(:question_string).permit(:question_string))
+    if @question.save
+      flash[:notice] = "Question was created successfully."
       redirect_to @question
-    # else
-    #   render 'new'
-    # end
+    else
+      render 'new'
+    end
   end
   #
   # private
@@ -36,3 +33,4 @@ end
   # def get_question
   #   @questions = @questions.sample
   # end
+end
