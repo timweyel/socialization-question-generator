@@ -3,7 +3,7 @@ class QuestionsController < ApplicationController
   # before_action :show, only: [:show, :index, :new, :create]
 
   def show
-    @question = Question.find(params[:id])
+    @questions = Question.find(params[:id])
   end
 
   def index
