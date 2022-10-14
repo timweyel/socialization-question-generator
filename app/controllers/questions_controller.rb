@@ -3,7 +3,11 @@ class QuestionsController < ApplicationController
   # before_action :show, only: [:show, :index, :new, :create]
 
   def show
-    @question = Question.find(params[:id])
+    if params[:id].nil?
+      @question = Question.order(Arel.sql('RAND()')).first
+    else
+      @question = Question.find(params[:id])
+    end
   end
 
   def index
@@ -23,14 +27,4 @@ class QuestionsController < ApplicationController
       render 'new'
     end
   end
-  #
-  # private
-
-  # def get_questions
-  #   @questions = Question.all
-  # end
-  #
-  # def get_question
-  #   @questions = @questions.sample
-  # end
 end
