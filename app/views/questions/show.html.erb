@@ -20,3 +20,15 @@
 
 <p><strong>ID: </strong><%= @question.id %></p>
 <p><strong>Question: </strong><%= @question.question_string %></p>
+
+<tr>
+  <td><%= button_to "Fresh Question", random_question_url, :method => :get %></td>
+</tr>
+</br>
+<tr>
+  <td class="button" ><%= button_to "Edit question", edit_question_url, :method => :patch %></td>
+</tr>
+</br>
+<tr>
+  <td class="button all_questions" ><%= button_to "All Questions", questions_path, :method => :get %></td>
+</tr>

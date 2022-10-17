@@ -1,0 +1,20 @@
+<h1>Edit article</h1>
+
+<% if @question.errors.any? %>
+  <h2>The following errors prevented the article from being saved</h2>
+  <ul>
+    <% @question.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+  </ul>
+<% end %>
+<%= form_with(model: @question) do |f| %>
+  <p>
+    <%= f.label :id, value: "#{'ID: '}" + @question.id.to_s %><br/>
+    <%= f.text_area :question_string %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+
+<% end %>

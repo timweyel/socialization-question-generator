@@ -9,8 +9,7 @@
 <% end %>
 <%= form_with scope: :question_string, url: questions_path, local: true do |f| %>
   <p>
-    <%= f.label :question %><br/>
-    <%= f.text_field :question_string %>
+    <%= f.text_field :question_string, :placeholder => "Enter your question" %>
   </p>
   <p>
     <%= f.submit %>
