@@ -1,24 +1,7 @@
-<!--<table>-->
-<!--  <div class="center">-->
-<!--    <h1>Random Mandatory Socialization Question</h1>-->
-<!--    <tr>-->
-<!--      <td><%#= @questions.question_string %></td>-->
-<!--    </tr>-->
-<!--    <tr>-->
-<!--      <td class="button" ><%#= button_to "Fresh Question", get_question_path, :method => :get %></td>-->
-<!--    </tr>-->
-<!--    <tr>-->
-<!--      <td class="button all_questions" ><%#= button_to "All Questions", questions_path, :method => :get %></td>-->
-<!--    </tr>-->
-<!--    <tr>-->
-<!--      <td class="button new_question" ><%#= button_to "Add Question", new_question_path, :method => :post %></td>-->
-<!--    </tr>-->
-<!--  </div>-->
-<!--</table>-->
 
-<h1>Showing Question details</h1>
 
-<p><strong>ID: </strong><%= @question.id %></p>
+<h1>Question <%= @question.id %></h1>
+
 <p><strong>Question: </strong><%= @question.question_string %></p>
 
 <tr>
@@ -26,7 +9,7 @@
 </tr>
 </br>
 <tr>
-  <td class="button" ><%= button_to "Edit question", edit_question_url, :method => :patch %></td>
+  <td class="button" ><%= button_to "Edit question", edit_question_path(@question), :method => :patch %></td>
 </tr>
 </br>
 <tr>

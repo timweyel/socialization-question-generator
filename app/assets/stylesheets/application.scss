@@ -1,17 +1,17 @@
 @import "bootstrap";
 
 table {
-    text-align: center;
+    //text-align: center;
     width:  100%;
-    align-items: center;
-    margin-top: 200px;
-    color: white;
-    font-size: 40px;
+    //align-items: center;
+    //margin-top: 200px;
+    //color: white;
+    //font-size: 40px;
 }
 
 h1, h2 {
-    text-align: center;
-    width: 100%;
+    //text-align: center;
+    //width: 100%;
 
 }
 
@@ -24,17 +24,17 @@ h1, h2 {
 /*}*/
 
 td {
-    padding-bottom: 20px;
+    //padding-bottom: 20px;
 }
 
 body {
-    background-image: url('invoca-logo.jpg');
+    //background-image: url('invoca-logo.jpg');
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100%;
     margin: auto;
-    color: white;
+    color: black;
 }
 
 .button {
