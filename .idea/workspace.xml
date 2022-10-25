@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d426c9f5-6354-41d0-b89c-8a13554c58c5" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db:create" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db:schema:load_if_ruby" beforeDir="false" />
-    </list>
+    <list default="true" id="d426c9f5-6354-41d0-b89c-8a13554c58c5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -178,7 +173,7 @@
       <workItem from="1665167242158" duration="6444000" />
       <workItem from="1665417741409" duration="27010000" />
       <workItem from="1666222326705" duration="3155000" />
-      <workItem from="1666644478907" duration="10568000" />
+      <workItem from="1666644478907" duration="10984000" />
     </task>
     <servers />
   </component>
