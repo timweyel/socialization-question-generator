@@ -15,9 +15,8 @@ class QuestionsController < ApplicationController
   end
 
   def new
-    @question = Question.new
+    # @question = Question
   end
-
 
   def create
     @question = Question.new(params.require(:question_string).permit(:question_string))
@@ -42,4 +41,5 @@ class QuestionsController < ApplicationController
       render 'edit'
     end
   end
+
 end
