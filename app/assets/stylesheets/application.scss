@@ -4,36 +4,36 @@ table {
     //text-align: center;
     width:  100%;
     //align-items: center;
-    //margin-top: 200px;
+    margin-top: 25px;
     //color: white;
     //font-size: 40px;
 }
 
-h1, h2 {
-    //text-align: center;
+.title {
+    text-align: center;
+    padding-bottom: 15px;
+}
+h2 {
+    text-align: center;
     //width: 100%;
-
 }
 
-.left_margin {
-    margin-left: 25%;
-}
 
-/*.all_questions {*/
-/*    text-align: center;*/
-/*}*/
 
 td {
     //padding-bottom: 20px;
 }
 
-body {
+body, html {
     background-image: url('towfiqu-barbhuiya-oZuBNC-6E2s-unsplash.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
     color: black;
+    margin: 2%;
+    width: 96%;
+    height: 96%;
 }
 
 .button {
