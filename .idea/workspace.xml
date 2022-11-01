@@ -7,8 +7,7 @@
     <list default="true" id="d426c9f5-6354-41d0-b89c-8a13554c58c5" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/questions_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/questions_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/questions/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/questions/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/questions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/questions/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/questions/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/questions/show.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +179,7 @@
       <workItem from="1666222326705" duration="3155000" />
       <workItem from="1666644478907" duration="10984000" />
       <workItem from="1666991840723" duration="3199000" />
-      <workItem from="1667232406975" duration="6491000" />
+      <workItem from="1667232406975" duration="9818000" />
     </task>
     <servers />
   </component>
