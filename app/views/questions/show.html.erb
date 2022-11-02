@@ -11,9 +11,8 @@
 
 <div class="question">
   <div class="btn-group">
-    <div class="question-group">
-      <div><b>Question <%= @question.id %>:</b> <span><%= @question.question_string %>&nbsp;&nbsp;</span>
-      </div>
+    <div>
+      <div><b>Question <%= @question.id %>:</b> <span><%= @question.question_string %>&nbsp;&nbsp;</span></div>
     </div>
     <div >
       <div><%= link_to "Edit", edit_question_path(@question), :method => :get %>&nbsp;&nbsp;</div>
