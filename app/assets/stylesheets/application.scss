@@ -1,24 +1,5 @@
 @import "bootstrap";
 
-table {
-    //text-align: center;
-    width:  100%;
-    //align-items: center;
-    margin-top: 25px;
-    //color: white;
-    //font-size: 40px;
-}
-
-.title {
-    text-align: center;
-    padding-bottom: 15px;
-}
-.btn-group {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-}
-
 body, html {
     background-image: url('towfiqu-barbhuiya-oZuBNC-6E2s-unsplash.jpg');
     background-repeat: no-repeat;
@@ -31,14 +12,24 @@ body, html {
     height: 96%;
 }
 
+.title {
+    text-align: center;
+    padding-bottom: 15px;
+}
+.btn-group {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
 .button {
     margin: 0 20px 0 20px;
 }
 
-//.show-buttons {
-//    display: inline-block;
-//}
-
 .question {
     padding-top: 20px;
+}
+
+.question_label {
+    font-weight: bold;
 }
