@@ -12,9 +12,9 @@
     <%= f.text_field :question_string, :placeholder => "Enter your question" %>
   </p>
   <p>
-    <%= f.submit %>
+    <%= f.submit :value => "Save"%>
   </p>
 <% end %>
-<%= link_to 'Return to Questions', questions_path %>
+<%= link_to 'Cancel', questions_path %>
 
-<h2><%= button_to "Create a Question", questions_url, :method => :post %></h2>
+<!--<h2><%#= button_to "Create a Question", questions_url, :method => :post %></h2>-->
