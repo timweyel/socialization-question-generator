@@ -11,10 +11,12 @@
     </ul>
   <% end %>
 </div>
-<div class="create-form">
   <%= form_with scope: :question_string, url: questions_url, local: true do |f| %>
-    <%= f.text_field :question_string, :placeholder => "Enter your question" %>&nbsp;
-    <%= f.submit :value => "Save"%>&nbsp;&nbsp;
+    <div class="create-form">
+        <%= f.text_area :question_string, { class: "question-field input-group form-control", :placeholder => "Enter your question" } %>&nbsp;
+    </div>
+    <div class="create-form">
+        <%= f.submit :value => "Save"%>&nbsp;&nbsp;
+        <%= link_to 'Cancel', questions_path %>
+    </div>
   <% end %>
-    <%= link_to 'Cancel', questions_path %>
-</div>
