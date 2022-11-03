@@ -1,5 +1,7 @@
-<h1>Edit Question <%= @question.id %><br/></h1>
+<h1 class="title">Random Mandatory Socialization Question Generator</h1>
 
+<div class="create-question">
+  <h2>Edit Question <%= @question.id %></h2>
 <% if @question.errors.any? %>
   <h2>The following errors prevented the article from being saved</h2>
   <ul>
@@ -8,13 +10,14 @@
     <% end %>
   </ul>
 <% end %>
-<%= form_with(model: @question, local: true, method: "patch") do |f| %>
-  <p>
-
-    <%= f.text_area :question_string %>
-  </p>
-  <p>
+</div>
+  <%= form_with(model: @question, local: true, method: "patch") do |f| %>
+  <div class="create-form">
+    <%= f.text_area :question_string, { class: "question-field input-group form-control" } %>
+  </div>
+  <div class="create-form">
     <%= f.submit %>
-  </p>
-  <%= link_to 'Cancel', question_path %>
+    &nbsp;&nbsp;
+    <%= link_to 'Cancel', question_path %>
+  </div>
 <% end %>

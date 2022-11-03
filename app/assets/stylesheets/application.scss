@@ -1,3 +1,7 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 @import "bootstrap";
 
 body, html {
@@ -31,9 +35,9 @@ body, html {
     padding-top: 20px;
 }
 
-.question_label {
-    font-weight: bold;
-}
+//.question_label {
+//    font-weight: bold;
+//}
 
 .create-question {
     align-items: center;
@@ -46,4 +50,10 @@ body, html {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-bottom: 20px;
+}
+
+.question-field {
+    height: 100px;
+    width: 500px;
 }
